@@ -428,7 +428,6 @@ body {
     font-weight: 500;
     letter-spacing: 0.5px;
 }
-}
 
 .theme-toggle:hover {
     background-color: var(--text-dark);
@@ -589,57 +588,5 @@ body {
 
     .contact-details p {
         font-size: 0.7rem;
-    }
-}
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .header-content .subtitle {
-        font-size: 1rem;
-    }
-
-    .section {
-        padding: 25px 20px;
-    }
-
-    .section h2 {
-        font-size: 1.5rem;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-content h1 {
-        font-size: 2rem;
-    }
-
-    .header {
-        padding: 40px 20px;
-    }
-
-    .section {
-        padding: 20px 15px;
-    }
-
-    .section h2 {
-        font-size: 1.3rem;
-    }
-
-    .tech-tags {
-        justify-content: flex-start;
     }
 }
