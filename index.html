@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이효진 - 자기소개서</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">이효진</h1>
+                <p class="subtitle">웹 개발자 포트폴리오</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- 자기소개 Section -->
+            <section class="section intro-section">
+                <h2>자기소개</h2>
+                <div class="intro-box">
+                    <p class="intro-text">
+                        안녕하세요 무말랭이 입니다. 무말랭이 입니다. 저는 HTML, CSS, JavaScript를 활용한 웹 개발에 관심이 많으며, 
+                        사용자 중심의 인터페이스를 만들기 위해 노력하고 있습니다. 새로운 기술을 배우는 것을 좋아하며, 
+                        팀 프로젝트에서도 적극적으로 협력하는 개발자입니다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 기술 스택 Section -->
+            <section class="section skills-section">
+                <h2>기술 스택</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>VS Code</li>
+                            <li>Chrome DevTools</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>기타</h3>
+                        <ul>
+                            <li>반응형 디자인</li>
+                            <li>Web API</li>
+                            <li>DOM 조작</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 경력 & 프로젝트 Section -->
+            <section class="section experience-section">
+                <h2>프로젝트 경험</h2>
+                <div class="project-card">
+                    <h3>포트폴리오 웹사이트</h3>
+                    <p class="project-meta">2024년 ~ 진행중</p>
+                    <p class="project-description">
+                        HTML, CSS, JavaScript를 활용한 반응형 포트폴리오 웹사이트 제작. 
+                        사용자 경험을 중심으로 설계하였으며, 모든 기기에서 최적화된 화면을 제공합니다.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Todo List 애플리케이션</h3>
+                    <p class="project-meta">2024년 6월</p>
+                    <p class="project-description">
+                        Vanilla JavaScript를 사용한 동적 Todo List 애플리케이션. 
+                        로컬 스토리지를 활용해 데이터를 저장하고, 실시간으로 UI를 업데이트합니다.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">LocalStorage</span>
+                        <span class="tag">DOM API</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 자격증 & 학습 Section -->
+            <section class="section certification-section">
+                <h2>자격증 및 교육</h2>
+                <div class="cert-item">
+                    <h3>웹 개발 기초 과정</h3>
+                    <p>온라인 코딩 부트캠프 (2024년 이수)</p>
+                </div>
+                <div class="cert-item">
+                    <h3>정보처리기능사</h3>
+                    <p>한국산업인력공단 (2023년 취득)</p>
+                </div>
+                <div class="cert-item">
+                    <h3>자격증 준비중</h3>
+                    <p>AWS Certified Cloud Practitioner 응시 예정</p>
+                </div>
+            </section>
+
+            <!-- 연락처 Section -->
+            <section class="section contact-section">
+                <h2>연락처</h2>
+                <div class="contact-info">
+                    <p><strong>이메일:</strong> <span class="contact-value" id="email">이메일을 클릭하면 표시됩니다</span></p>
+                    <p><strong>전화:</strong> <span class="contact-value" id="phone">전화번호를 클릭하면 표시됩니다</span></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com" target="_blank" class="contact-link">github.com</a></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 이효진. All rights reserved.</p>
+            <button class="theme-toggle" id="themeToggle">🌙 다크모드</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
