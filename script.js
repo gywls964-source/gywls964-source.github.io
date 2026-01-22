@@ -35,7 +35,7 @@ const emailElement = document.getElementById('email');
 const phoneElement = document.getElementById('phone');
 
 emailElement.addEventListener('click', () => {
-    const email = 'hyojin.lee@example.com';
+    const email = 'hyojin.space@email.com';
     emailElement.textContent = email;
     
     // 복사 기능
@@ -62,33 +62,31 @@ phoneElement.addEventListener('click', () => {
     });
 });
 
-// 스크롤 애니메이션 효과
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// 모든 섹션 요소에 옵저버 적용
+// 네비게이션 스크롤 이벤트
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(section);
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        const sections = document.querySelectorAll('section, header');
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id') || '';
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('active');
+            }
+        });
     });
 });
 
-// 네비게이션 부드러운 스크롤
+// 네비게이션 링크 클릭 시 부드러운 스크롤
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -105,9 +103,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// 프로젝트 카드 호버 효과
+const projectItems = document.querySelectorAll('.project-item');
+projectItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        this.style.cursor = 'pointer';
+    });
+    
+    item.addEventListener('click', function() {
+        const projectName = this.querySelector('.project-overlay h3').textContent;
+        console.log('프로젝트 선택:', projectName);
+    });
+});
+
 // 페이지 로드 완료 시 메시지
 window.addEventListener('load', () => {
-    console.log('이효진의 자기소개서 웹페이지가 로드되었습니다! 💼');
+    console.log('이효진 공간디자이너 포트폴리오가 로드되었습니다! 🎨');
+});
+
+// Intersection Observer를 사용한 애니메이션
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// 섹션 요소에 옵저버 적용
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.about-section, .contact-section');
+    sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(section);
+    });
+});
+
+// 페이지 로드 완료 시 메시지
+window.addEventListener('load', () => {
+    console.log('이효진 공간디자이너 포트폴리오가 로드되었습니다! 🎨');
 });
 
 // 마우스 호버 효과 추가

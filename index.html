@@ -3,128 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이효진 - 자기소개서</title>
+    <title>이효진 - 공간디자이너 포트폴리오</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">이효진</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">WORKS</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
         <!-- Header -->
-        <header class="header">
+        <header class="header" id="home">
             <div class="header-content">
-                <h1 class="name">이효진</h1>
-                <p class="subtitle">웹 개발자 포트폴리오</p>
+                <div class="header-text">
+                    <h1 class="name">이효진</h1>
+                    <p class="subtitle">공간디자이너 포트폴리오</p>
+                    <p class="description">감정을 담은 공간을 창조하는 공간디자이너입니다</p>
+                </div>
+                <div class="header-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=500&fit=crop" alt="Space Design">
+                </div>
             </div>
         </header>
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- 자기소개 Section -->
-            <section class="section intro-section">
-                <h2>자기소개</h2>
-                <div class="intro-box">
-                    <p class="intro-text">
-                        안녕하세요 무말랭이 입니다. 무말랭이 입니다. 저는 HTML, CSS, JavaScript를 활용한 웹 개발에 관심이 많으며, 
-                        사용자 중심의 인터페이스를 만들기 위해 노력하고 있습니다. 새로운 기술을 배우는 것을 좋아하며, 
-                        팀 프로젝트에서도 적극적으로 협력하는 개발자입니다.
-                    </p>
+            <!-- Works Gallery Section -->
+            <section class="works-section">
+                <div class="works-container">
+                    <!-- Project 1 -->
+                    <div class="project-item" data-category="cafe">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=600&h=600&fit=crop" alt="Identity Coffee Lab">
+                            <div class="project-overlay">
+                                <h3>Identity Coffee Lab</h3>
+                                <p>2024년</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-item" data-category="hotel">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=600&fit=crop" alt="Hotel Chicory">
+                            <div class="project-overlay">
+                                <h3>Hotel Chicory</h3>
+                                <p>2024년</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-item" data-category="restaurant">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1514432324607-2e467f4af445?w=600&h=600&fit=crop" alt="Nuwa">
+                            <div class="project-overlay">
+                                <h3>Nuwa Restaurant</h3>
+                                <p>2023년</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-item" data-category="office">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=600&fit=crop" alt="Modern Office Space">
+                            <div class="project-overlay">
+                                <h3>Modern Office Space</h3>
+                                <p>2023년</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-item" data-category="cafe">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=600&h=600&fit=crop" alt="Center Coffee">
+                            <div class="project-overlay">
+                                <h3>Center Coffee</h3>
+                                <p>2023년</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-item" data-category="residential">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop" alt="White House Residential">
+                            <div class="project-overlay">
+                                <h3>White House</h3>
+                                <p>2022년</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="project-item" data-category="retail">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1554995207-c18e338713f2?w=600&h=600&fit=crop" alt="Retail Store Design">
+                            <div class="project-overlay">
+                                <h3>Retail Experience Center</h3>
+                                <p>2022년</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8 -->
+                    <div class="project-item" data-category="hotel">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1578672385732-e6c11b4b7b20?w=600&h=600&fit=crop" alt="Boutique Hotel">
+                            <div class="project-overlay">
+                                <h3>Boutique Hotel Lounge</h3>
+                                <p>2022년</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <!-- 기술 스택 Section -->
-            <section class="section skills-section">
-                <h2>기술 스택</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                        </ul>
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <div class="about-container">
+                    <div class="about-content">
+                        <h2>About</h2>
+                        <h3>감정을 담은 공간을 창조하는 공간디자이너</h3>
+                        <p>
+                            안녕하세요, 이효진 공간디자이너입니다.
+                        </p>
+                        <p>
+                            저는 10년 이상의 경험을 바탕으로 상업 공간, 주거 공간, 문화 공간 등 다양한 프로젝트를 진행해왔습니다.
+                            각 공간의 고유한 특성과 사용자의 니즈를 깊이 있게 분석하여, 기능성과 미학을 동시에 만족하는
+                            공간을 설계하는 것을 목표로 합니다.
+                        </p>
+                        <p>
+                            재료의 질감, 색채의 조화, 빛의 표현을 통해 사람들이 느껴야 할 감정을 섬세하게 담아내며,
+                            지속 가능한 디자인과 혁신적인 솔루션을 추구합니다.
+                        </p>
                     </div>
-                    <div class="skill-card">
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Git / GitHub</li>
-                            <li>VS Code</li>
-                            <li>Chrome DevTools</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card">
-                        <h3>기타</h3>
-                        <ul>
-                            <li>반응형 디자인</li>
-                            <li>Web API</li>
-                            <li>DOM 조작</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 경력 & 프로젝트 Section -->
-            <section class="section experience-section">
-                <h2>프로젝트 경험</h2>
-                <div class="project-card">
-                    <h3>포트폴리오 웹사이트</h3>
-                    <p class="project-meta">2024년 ~ 진행중</p>
-                    <p class="project-description">
-                        HTML, CSS, JavaScript를 활용한 반응형 포트폴리오 웹사이트 제작. 
-                        사용자 경험을 중심으로 설계하였으며, 모든 기기에서 최적화된 화면을 제공합니다.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Todo List 애플리케이션</h3>
-                    <p class="project-meta">2024년 6월</p>
-                    <p class="project-description">
-                        Vanilla JavaScript를 사용한 동적 Todo List 애플리케이션. 
-                        로컬 스토리지를 활용해 데이터를 저장하고, 실시간으로 UI를 업데이트합니다.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">LocalStorage</span>
-                        <span class="tag">DOM API</span>
+                    <div class="about-skills">
+                        <div class="skill-group">
+                            <h4>Specialization</h4>
+                            <ul>
+                                <li>상업 공간 설계</li>
+                                <li>주거 공간 디자인</li>
+                                <li>공개 공간 계획</li>
+                                <li>실내 인테리어 디자인</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Design Tools</h4>
+                            <ul>
+                                <li>AutoCAD</li>
+                                <li>SketchUp</li>
+                                <li>Lumion</li>
+                                <li>Adobe Creative Suite</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Experience</h4>
+                            <ul>
+                                <li>10년 이상의 경력</li>
+                                <li>50+ 프로젝트 완수</li>
+                                <li>국제 협력 경험</li>
+                                <li>수상 경력 다수</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 자격증 & 학습 Section -->
-            <section class="section certification-section">
-                <h2>자격증 및 교육</h2>
-                <div class="cert-item">
-                    <h3>웹 개발 기초 과정</h3>
-                    <p>온라인 코딩 부트캠프 (2024년 이수)</p>
-                </div>
-                <div class="cert-item">
-                    <h3>정보처리기능사</h3>
-                    <p>한국산업인력공단 (2023년 취득)</p>
-                </div>
-                <div class="cert-item">
-                    <h3>자격증 준비중</h3>
-                    <p>AWS Certified Cloud Practitioner 응시 예정</p>
-                </div>
-            </section>
-
-            <!-- 연락처 Section -->
-            <section class="section contact-section">
-                <h2>연락처</h2>
-                <div class="contact-info">
-                    <p><strong>이메일:</strong> <span class="contact-value" id="email">이메일을 클릭하면 표시됩니다</span></p>
-                    <p><strong>전화:</strong> <span class="contact-value" id="phone">전화번호를 클릭하면 표시됩니다</span></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com" target="_blank" class="contact-link">github.com</a></p>
+            <!-- Contact Section -->
+            <section class="contact-section" id="contact">
+                <div class="contact-container">
+                    <h2>Contact</h2>
+                    <div class="contact-content">
+                        <div class="contact-info-box">
+                            <h3>프로젝트 상담 및 협업 문의</h3>
+                            <p>새로운 프로젝트나 협업 기회에 항상 열려있습니다.</p>
+                            <div class="contact-details">
+                                <p><strong>이메일:</strong> <span class="contact-value" id="email">클릭하여 표시</span></p>
+                                <p><strong>전화:</strong> <span class="contact-value" id="phone">클릭하여 표시</span></p>
+                                <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" class="contact-link">@hyojin_space</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 이효진. All rights reserved.</p>
-            <button class="theme-toggle" id="themeToggle">🌙 다크모드</button>
+            <div class="footer-content">
+                <p>&copy; 2024 이효진 공간디자이너. All rights reserved.</p>
+                <button class="theme-toggle" id="themeToggle">🌙 다크모드</button>
+            </div>
         </footer>
     </div>
 
